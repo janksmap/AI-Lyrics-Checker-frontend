@@ -3,6 +3,9 @@
     "name": "AI Lyric Checker",
     "version": "1.0",
     "description": "An AI Lyric Checker for Spotify",
+    "icons": {
+      "128": "AI-Lyrics-Checker.png"
+    },
     "permissions": [
       "activeTab",
       "scripting"
@@ -12,7 +15,7 @@
     },
     "content_scripts": [
       {
-        "matches": ["*://*.spotify.com/*"],
+        "matches": ["https://open.spotify.com/*"],
         "js": ["checkLyrics.js", "content.js"]
       }
     ]
